@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Link from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Button = (props) => {
   return (
@@ -8,7 +8,7 @@ const Button = (props) => {
         <button onClick={props.eventHandler} className={`btn btn--${props.type}`}>{props.text}</button>
       }
       {props.category === 'link' &&
-        <Link className={`btn btn--${props.type}`}>{props.text}</Link>
+        <Link to={props.linkPath} className={`btn btn--${props.type}`}>{props.text}</Link>
       }
     </Fragment>
   )
