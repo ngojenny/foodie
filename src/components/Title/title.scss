@@ -1,0 +1,31 @@
+.heading-title {
+  display: flex;
+  &__text {
+    font-family: $secondaryFont;
+    text-shadow:
+    -1px 1px 0 $accentColor,
+    -2px 2px 0 $accentColor,
+    -3px 3px 0 $accentColor;
+    font-size: 5rem;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+    &::after {
+      content: '';
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background: $primaryColor;
+      box-shadow: 
+      -1px 1px 0 $accentColor,
+      -2px 2px 0 $accentColor,
+      -3px 3px 0 $accentColor;
+      display: block;
+      position: absolute;
+      left: 101%;
+      bottom: 11px;
+    }
+  }
+}
+

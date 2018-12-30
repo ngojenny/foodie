@@ -2,3 +2,21 @@ $primaryColor: #547F81;
 $accentColor: #E2BA01;
 $baseColor: #FFFFFF;
 $shadowColor: rgba(0,0,0,0.35);
+
+$primaryFont: 'Roboto', sans-serif;
+$secondaryFont: 'Yeseva', serif;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $primaryFont;
+  color: $primaryColor;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
