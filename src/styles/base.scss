@@ -1,6 +1,7 @@
 $primaryColor: #547F81;
 $accentColor: #E2BA01;
 $baseColor: #FFFFFF;
+$secondaryColor: #F8F8F8;
 $shadowColor: rgba(0,0,0,0.35);
 
 $primaryFont: 'Roboto', sans-serif;
@@ -19,4 +20,14 @@ body {
 .wrapper {
   max-width: 1080px;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-content-area {
+  background: $secondaryColor;
+  min-height: calc(100vh - 60px);
+  padding: 1px;
 }
