@@ -8,7 +8,7 @@ const Button = (props) => {
         <button onClick={props.eventHandler} className={`btn btn--${props.type}`}>{props.text}</button>
       }
       {props.category === 'link' &&
-        <Link to={props.linkPath} className={`btn btn--${props.type}`}>{props.text}</Link>
+        <Link to={props.path} className={`btn btn--${props.type}`}>{props.text}</Link>
       }
     </Fragment>
   )

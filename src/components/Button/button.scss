@@ -12,5 +12,6 @@
   &--secondary {
     background: $baseColor;
     color: $primaryColor;
+    border: 1px solid $primaryColor;
   }
 }

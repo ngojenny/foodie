@@ -6,7 +6,7 @@ import Title from '../Title/Title';
 const Nav = () => {
   return (
     <aside className="sidebar">
-      <Title text="foodie"/>
+      <Title text="foodie" logo={true}/>
       <nav className="sidebar__nav">
         <Link className="sidebar__link" to="/">Groups</Link>
         <Link className="sidebar__link" to="/search">Search</Link>

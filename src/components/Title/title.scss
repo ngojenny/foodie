@@ -1,5 +1,4 @@
 .heading-title {
-  margin-top: 65px;
   display: flex;
   &__text {
     font-family: $secondaryFont;
@@ -7,15 +6,16 @@
     -1px 1px 0 $accentColor,
     -2px 2px 0 $accentColor,
     -3px 3px 0 $accentColor;
-    font-size: 5rem;
+    font-size: 3.6rem;
     font-weight: 700;
     display: inline-block;
-    margin: 0 auto;
     position: relative;
+    text-transform: lowercase;
+    margin: 0;
     &::after {
       content: '';
-      height: 8px;
-      width: 8px;
+      height: 6px;
+      width: 6px;
       border-radius: 50%;
       background: $primaryColor;
       box-shadow: 
@@ -25,7 +25,17 @@
       display: block;
       position: absolute;
       left: 101%;
-      bottom: 11px;
+      bottom: 8px;
+    }
+    &--logo{
+      font-size: 5rem;
+      margin: 0 auto;
+      margin-top: 65px;
+      &::after {
+        height: 8px;
+        width: 8px;
+        bottom: 11px;
+      }
     }
   }
 }
