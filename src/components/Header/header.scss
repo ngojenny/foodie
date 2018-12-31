@@ -1,0 +1,34 @@
+.header {
+  background: $primaryColor;
+  color: $baseColor;
+  padding: 10px 0;
+  display: flex;
+  position: relative;
+  &__logo {
+    font-family: $secondaryFont;
+    margin: auto;
+    position: relative;
+    letter-spacing: 1px;
+    font-size: 3.4rem;
+    &::after {
+      content: '';
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      background: $baseColor;
+      display: block;
+      position: absolute;
+      left: 103%;
+      bottom: 8px;
+    }
+  }
+  &__logout {
+    color: $baseColor;
+    background: none;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
