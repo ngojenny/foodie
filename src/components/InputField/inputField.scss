@@ -1,0 +1,25 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  &__input {
+    border: none;
+    border-bottom: 1px solid $primaryColor;
+    padding: 5px 0;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: lighten($primaryColor, 20);
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: lighten($primaryColor, 20);
+    }
+    &:-ms-input-placeholder { /* IE 10+ */
+      color: lighten($primaryColor, 20);
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+      color: lighten($primaryColor, 20);
+    }
+  }
+}

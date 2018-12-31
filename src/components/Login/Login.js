@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
-import firebase from '../../firebase';
+import React from 'react';
 
 import Title from '../Title/Title';
 import Button from '../Button/Button';
-
-const provider = new firebase.auth.GoogleAuthProvider();
-const auth = firebase.auth();
 
 const Login = (props) => {
   return (
